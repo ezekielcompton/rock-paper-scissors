@@ -18,8 +18,10 @@
        
     
 }
-const promptVar= prompt("choose rock paper or scissors")
-const userChoice= promptVar.toLowerCase()
+let n=1
+let y= 1
+let i=1
+
 
 
 
@@ -28,43 +30,73 @@ const userChoice= promptVar.toLowerCase()
 
 function game (){
   
- 
-    computerPlay()
-        
+    const promptVar= prompt("choose rock paper or scissors")
+    const userChoice= promptVar.toLowerCase()
     
-    if
-       (userChoice==x)
-       { result="Draw!"}
-    else if
+    computerPlay()
+    
+    
+     if
         (userChoice=="rock" && x=="scissors")
-            {result="User Wins!"}
+            {n++
+            i++
+            }
     else if
          (x=="rock" && userChoice=="scissors")
-            {result="Computer Wins!"}
+            {
+                y++
+            i++}
     else if
          (userChoice=="paper" && x=="scissors")
-            result="Computer Wins!"
+            {
+            y++
+            i++}
     else if
          (x=="paper" && userChoice=="scissors")
-            {result="User Wins!"}
+            {
+                n++
+            i++}
     else if        
      (x=="rock" && userChoice=="paper")
-            {result="User Wins!"}
+            {
+            n++
+            i++}
             
     else if
     (x=="paper" && userChoice=="rock")
-            {result="Computer Wins!"}
-    else (
-        result= "Seriously dude"
-    )
+            {
+                y++
+           i++}
+    else 
+       { alert("Draw! Try again!")
+        game()}
+    
+
+    if(i==5 && (y>n)){
+        alert("Thats game! Computer wins!")
+        
+    }
+
+    else if (i==5 && (n>y)){
+alert("Thats game! You win!")
+    }
+
+    else if (i<5)
+    game()
+    console.log(i)
+    console.log(n)
+    console.log(y)
 
 
 
-
-console.log(userChoice)
-console.log(x)
-  console.log(result)
 }
+        
+
+
+
+
+
+
 
 game(
 
