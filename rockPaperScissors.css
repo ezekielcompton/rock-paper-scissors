@@ -1,0 +1,51 @@
+.button{
+    margin: 40px;
+    border:40px;
+    padding:40px;
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid;
+    border-color: black;
+    font-size: x-large;
+    font-weight: 600;
+    font-family: 'Bakbak One', cursive;  
+
+
+    
+}
+.playerScore{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.computerScore{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+body{
+
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Bakbak One', cursive;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+.button-container{
+    display: flex;
+    padding: 100px;
+}
+
